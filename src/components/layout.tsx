@@ -42,7 +42,7 @@ export function Navbar() {
              hello
             </Link>
           </div>
-          <ThemeToggle />
+       
         </div>
       </nav>
     </header>
