@@ -59,7 +59,7 @@ export function InstagramVideoForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="bg-accent/20 my-4 flex w-full max-w-2xl flex-col items-center rounded-lg border px-4 pb-16 pt-8 shadow-md sm:px-8"
+{/*         className="bg-accent/20 my-4 flex w-full max-w-2xl flex-col items-center rounded-lg border px-4 pb-16 pt-8 shadow-md sm:px-8" */}
       >
         <div className="mb-2 h-6 w-full px-2 text-start text-red-500">
           {httpError}
