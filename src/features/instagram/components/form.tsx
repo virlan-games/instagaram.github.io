@@ -57,46 +57,46 @@ export function InstagramVideoForm() {
 
   return (
     <Form {...form}>
-      <form
-        onSubmit={form.handleSubmit(onSubmit)}
-{/*         className="bg-accent/20 my-4 flex w-full max-w-2xl flex-col items-center rounded-lg border px-4 pb-16 pt-8 shadow-md sm:px-8" */}
-      >
-        <div className="mb-2 h-6 w-full px-2 text-start text-red-500">
-          {httpError}
-        </div>
-        <div className="relative mb-6 flex w-full flex-col items-center gap-4 sm:flex-row">
-          <FormField
-            control={form.control}
-            name="postUrl"
-            render={({ field }) => (
-              <FormItem className="w-full">
-                <FormControl>
-                  <Input
-                    disabled={isPending}
-                    type="url"
-                    placeholder="Paste your Instagram link here..."
-                    className="h-12 w-full sm:pr-28"
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-         <Button
-  disabled={isPending}
-  type="submit"
-  className="right-1 top-1 w-full sm:absolute sm:w-fit bg-green-500 hover:bg-green-600 text-white"
+     <form
+  onSubmit={form.handleSubmit(onSubmit)}
+  className="w-full max-w-2xl px-4 sm:px-8 py-8 min-h-[200px] bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500"
 >
-  {isPending ? (
-    <Loader2 className="mr-2 animate-spin" />
-  ) : (
-    <Download className="mr-2" />
-  )}
-  Download
-</Button>
-        </div>
-      </form>
+  <div className="mb-2 h-6 w-full px-2 text-start text-red-500">
+    {httpError}
+  </div>
+  <div className="relative mb-6 flex w-full flex-col items-center gap-4 sm:flex-row">
+    <FormField
+      control={form.control}
+      name="postUrl"
+      render={({ field }) => (
+        <FormItem className="w-full">
+          <FormControl>
+            <Input
+              disabled={isPending}
+              type="url"
+              placeholder="Paste URL Instagram"
+              className="h-12 w-full sm:pr-28 rounded-lg bg-white/95 border-0 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+              {...field}
+            />
+          </FormControl>
+          <FormMessage />
+        </FormItem>
+      )}
+    />
+    <Button
+      disabled={isPending}
+      type="submit"
+      className="right-1 top-1 w-full sm:absolute sm:w-fit bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg border-0"
+    >
+      {isPending ? (
+        <Loader2 className="mr-2 animate-spin" />
+      ) : (
+        <Download className="mr-2" />
+      )}
+      Download
+    </Button>
+  </div>
+</form>
     </Form>
   );
 }
