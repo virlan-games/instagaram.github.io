@@ -27,20 +27,7 @@ export function Navbar() {
             <Link href="/" className="hover:underline">
               Home
             </Link>
-            <Link
-              target="_blank"
-              href="/"
-              className="hover:underline"
-            >
-              Github
-            </Link>{" "}
-            <Link
-              target="_blank"
-              href="/"
-              className="hover:underline"
-            >
-             hello
-            </Link>
+          
           </div>
        
         </div>
