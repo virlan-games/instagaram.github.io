@@ -83,18 +83,18 @@ export function InstagramVideoForm() {
               </FormItem>
             )}
           />
-          <Button
-            disabled={isPending}
-            type="submit"
-            className="right-1 top-1 w-full sm:absolute sm:w-fit"
-          >
-            {isPending ? (
-              <Loader2 className="mr-2 animate-spin" />
-            ) : (
-              <Download className="mr-2" />
-            )}
-            Download
-          </Button>
+         <Button
+  disabled={isPending}
+  type="submit"
+  className="right-1 top-1 w-full sm:absolute sm:w-fit bg-green-500 hover:bg-green-600 text-white"
+>
+  {isPending ? (
+    <Loader2 className="mr-2 animate-spin" />
+  ) : (
+    <Download className="mr-2" />
+  )}
+  Download
+</Button>
         </div>
       </form>
     </Form>
