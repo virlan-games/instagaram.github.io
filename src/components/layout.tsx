@@ -29,17 +29,17 @@ export function Navbar() {
             </Link>
             <Link
               target="_blank"
-              href="https://github.com/riad-azz/instagram-video-downloader"
+              href="/"
               className="hover:underline"
             >
               Github
             </Link>{" "}
             <Link
               target="_blank"
-              href="https://github.com/riad-azz"
+              href="/"
               className="hover:underline"
             >
-              Creator
+             hello
             </Link>
           </div>
           <ThemeToggle />
@@ -54,7 +54,7 @@ export function Footer() {
     <footer className="h-8 w-full bg-background/50 text-center text-secondary-foreground">
       <div className="flex items-center justify-between border-t border-input px-4 py-2">
         <div aria-label="Disclaimer" className="text-sm font-semibold">
-          We are not affiliated with Instagram or Meta
+          We 
         </div>
         <div className="flex items-center gap-1 text-sm">
           <Link href="/terms-of-service" className="hover:underline">
