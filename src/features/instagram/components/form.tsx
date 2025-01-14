@@ -145,7 +145,7 @@ const InstagramReelsDownloader: React.FC = () => {
       <h1>Instagram Reels Video Downloader</h1>
       <p>Paste the URL of the Instagram reel to download the video.</p>
 
-      <form onSubmit={handleDownload} style={{ maxWidth: "500px", margin: "auto" }}>
+      <form onSubmit={handleDownload} style={{ maxWidth: "100%", margin: "0px" }}>
         <input
           type="url"
           placeholder="Paste Instagram URL here..."
